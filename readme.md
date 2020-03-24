@@ -17,6 +17,8 @@ This app has been developed as a starting point for volunteers
 and organizations willing to provide a tool or a companion to
 a group of people (even countrywide!) during the COVID-19 crisis.
 
+This project is greatly inspired by the `advice_app` proposal on [Working with Helpful Engineers](https://github.com/helpfulengineering/resources/blob/master/software/proposals/advice_app.md).
+
 # Features
 
 Out-of-the-box it provides five main features :
