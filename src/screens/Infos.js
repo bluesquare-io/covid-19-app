@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {ScrollView, View, Button} from 'react-native';
 import AutoHeightWebView from 'react-native-autoheight-webview';
 import {AppContext} from '../contexts/AppProvider';
-import {request} from '../helpers';
+import {request, withToken} from '../helpers';
 import {sources} from '../../app.json';
 
 /**
@@ -12,7 +12,9 @@ import {sources} from '../../app.json';
 class Infos extends Component
 {
     _reset = (callback) => {
-        request('delete', sources.token, {})
+        request('delete', sources.token, {}, {
+            "Authorization": `Bearer ${this.props.token}`
+        })
             .then(callback).catch(callback)
     }
 
@@ -55,7 +57,7 @@ class Infos extends Component
     }
 }
 
-export default Infos;
+export default withToken(Infos);
 
 const styles = {
     scrollView: {
