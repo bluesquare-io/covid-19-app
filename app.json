@@ -1,0 +1,23 @@
+{
+  "name": "covidapp",
+  "displayName": "COVID-19",
+  "features": {
+    "notifications": true,
+    "debug": true
+  },
+  "sources": {
+    "token": "http://localhost:8000/api/token",
+    "newsfeed": "http://localhost:8000/api/newsfeed",
+    "map": "http://localhost:8000/api/map",
+    "track": "http://localhost:8000/api/track",
+    "infos": "http://localhost:8000/infos"
+  },
+  "map": {
+    "defaultPosition": {
+      "latitude": 48.866667,
+      "longitude": 2.333333,
+      "latitudeDelta": 0.2,
+      "longitudeDelta": 0.1
+    }
+  }
+}
