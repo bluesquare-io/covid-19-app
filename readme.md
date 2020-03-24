@@ -39,9 +39,9 @@ This app is open-source and completely free. 🎁
 
 # Screenshots
 
-![Newsfeed](__tests__/screenshots/newsfeed_preview.png "Newsfeed")
-![Map](__tests__/screenshots/map_preview.png "Map")
-![Infos](__tests__/screenshots/infos_preview.png "Infos")
+![Newsfeed](__tests__/screenshots/newsfeed.png "Newsfeed")
+![Map](__tests__/screenshots/map.png "Map")
+![Infos](__tests__/screenshots/infos.png "Infos")
 
 # Going further
 
