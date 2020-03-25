@@ -6,11 +6,11 @@
     "debug": true
   },
   "sources": {
-    "token": "http://localhost:8000/api/token",
-    "newsfeed": "http://localhost:8000/api/newsfeed",
-    "map": "http://localhost:8000/api/map",
-    "track": "http://localhost:8000/api/track",
-    "infos": "http://localhost:8000/infos"
+    "token": "https://tests4xhnhbbe-covidapi.functions.fnc.fr-par.scw.cloud/api/token",
+    "newsfeed": "https://tests4xhnhbbe-covidapi.functions.fnc.fr-par.scw.cloud/api/newsfeed",
+    "map": "https://tests4xhnhbbe-covidapi.functions.fnc.fr-par.scw.cloud/api/map",
+    "track": "https://tests4xhnhbbe-covidapi.functions.fnc.fr-par.scw.cloud/api/track",
+    "infos": "https://tests4xhnhbbe-covidapi.functions.fnc.fr-par.scw.cloud/infos"
   },
   "map": {
     "defaultPosition": {
