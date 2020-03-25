@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, TouchableOpacity, Text} from 'react-native';
+import {View, TouchableOpacity, Text, Platform} from 'react-native';
 import {BlurView} from '@react-native-community/blur';
 import Icon from 'react-native-vector-icons/Entypo';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
@@ -77,15 +77,18 @@ class Main extends Component
     renderTabs()
     {
         return (
-            <View style={styles.tabsContainer}>
-                <BlurView blurType="dark" blurAmount={10} style={styles.flex}>
-                    <View style={styles.tabsView}>
-                        {this.renderTab('news', 'News', 'newspaper-o', 'fontawesome')}
-                        {this.renderTab('map', 'Map', 'map')}
-                        {this.renderTab('infos', 'Infos', 'warning')}
+            <>
+                <BlurView blurType="dark" blurAmount={10} style={styles.blurView}/>
+                <View style={styles.tabsContainer}>
+                    <View style={styles.flex}>
+                        <View style={styles.tabsView}>
+                            {this.renderTab('news', 'News', 'newspaper-o', 'fontawesome')}
+                            {this.renderTab('map', 'Map', 'map')}
+                            {this.renderTab('infos', 'Infos', 'warning')}
+                        </View>
                     </View>
-                </BlurView>
-            </View>
+                </View>
+            </>
         )
     }
 
@@ -106,9 +109,21 @@ class Main extends Component
 
 export default Main;
 
+const androidSpecificBlurViewStyle = Platform.OS === 'ios' ? {} : {
+    backgroundColor: 'rgba(0, 0, 0, 0.9)'
+}
+
 const styles = {
     flex: {
         flex: 1
+    },
+    blurView: {
+        height: 100,
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        ...androidSpecificBlurViewStyle
     },
     tabsContainer: {
         borderTopColor: '#555',
