@@ -47,6 +47,9 @@ class Map extends Component
                 request('post', sources.track,
                     { position },
                     { "Authorization": "Bearer " + this.props.token })
+            },
+            error => {
+                features.debug && console.log(error);
             }
         )
     }
