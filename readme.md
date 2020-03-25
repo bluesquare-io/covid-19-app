@@ -59,8 +59,9 @@ the disease on the map.
 - React Native CLI (`npx react-native`)
 - Xcode (macOS only) _- Required for iOS deployments._
 - Android Studio _- Required for Android deployments._
+- Google Maps API key _- Required for Android._
 - Firebase project (for Push Notifications)
-- [Your own API](#api-specifications) or [our example API](https://github.com/bluesquare-io/covid-19-server)
+- [Your own API](#api-specifications) or [our example API](https://github.com/bluesquare-io/covid-19-server). You can test this app using the [demo API](https://github.com/bluesquare-io/covid-19-app/blob/master/app.json#L8) (static).
 
 ## Installation
 
