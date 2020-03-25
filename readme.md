@@ -78,15 +78,13 @@ Add your API endpoints in `app.json`.
 
 ### Android
 
-1. Firebase: create an Android version
-2. Add your `google-services.json` in `android/app/`
-3. _(optional)_ Replace `YOUR_GOOGLE_MAPS_API_KEY` in `AndroidManifest.xml`
+1. Firebase: create an Android version and add your `google-services.json` in `android/app/`
+2. Google Maps: create an API key and replace `YOUR_GOOGLE_MAPS_API_KEY` in `AndroidManifest.xml`
 
 ### iOS
 
-1. Firebase: create an iOS version
-2. Add your `GoogleService-Info.plist` in `ios/` (using Xcode)
-3. _(optional)_ Replace `YOUR_GOOGLE_MAPS_API_KEY` in `AppDelegate.m`
+1. Firebase: create an iOS version and add your `GoogleService-Info.plist` in `ios/` (using Xcode)
+2. _(optional)_ Replace `YOUR_GOOGLE_MAPS_API_KEY` in `AppDelegate.m`
 
 ## Running locally
 
